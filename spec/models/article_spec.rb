@@ -13,10 +13,10 @@ RSpec.describe Article, type: :model do
     end
 
   end
-  # context "testing associations" do
-  #   it "belongs to a User" do
-  #     expect { FactoryBot.build(:article).user }.to_not raise_error
-  #   end
-  # end
+  context "testing associations" do
+    it "belongs to a User" do
+      expect { FactoryBot.build(:article).user }.to_not raise_error
+    end
+  end
   
 end
